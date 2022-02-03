@@ -1,0 +1,149 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[T1]{fontenc} 
+\usepackage[usenames]{color}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{lmodern}
+\usepackage{vmargin}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage[hidelinks]{hyperref} 
+
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{amsmath}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{cancel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{natbib}
+\usepackage{ragged2e}
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+
+\usepackage{color}
+\definecolor{editorGray}{rgb}{0.95, 0.95, 0.95}
+\definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
+\definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
+\usepackage{upquote}
+\usepackage{listings}
+
+% Fin de inicialización del documento ------------------------------------------------
+
+\renewcommand*\contentsname{Índice} %Esto es para cambiar el título del índice
+
+\begin{document}
+
+\begin{titlepage}
+	%---------------------------------------------------------------------------------------------------
+	%-----------| TITULO |-----------------------------------------------------------------------------
+	\centering
+	\vspace{5cm}
+	{\scshape\Huge Memoria proyecto robot \par}
+	{\LARGE Emisión de sonidos con zumbador \par}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=13cm]{images/robot.jpg}
+	\end{figure}
+	{\bfseries\LARGE Diseño de Computadores Empotrados \par}
+	{\Large Autor: \par}
+	{\Large Juan Francisco Santos Relinque \par}
+	{\Large Mayo 2021 \par}
+	{\large Curso 2020/2021 \par}
+	\begin{figure}[H]
+		\raggedleft
+		\includegraphics[width=2cm]{images/LogoV2_475x629.png}
+	\end{figure}
+\end{titlepage}
+	
+\newpage
+%-------------------------------------------------------------------------------------------------------
+%-----------| TABLA DE CONTENIDOS |---------------------------------------------------------------
+%-------------------------------------------------------------------------------------------------------
+\hypersetup{linkcolor=black}
+\tableofcontents
+\hypersetup{linkcolor=blue}
+
+\newpage
+\section{Introducción}
+
+\section{Tecnologías a utilizar}
+
+	\subsection{Descripción MCU}
+	
+	\subsection{Descripción robot}
+	
+		\subsubsection{Tabla de pines}
+		
+		\subsubsection{Dispositivos incluidos}
+
+	\subsection{Lenguaje de desarrollo}
+	
+	\subsection{Entorno de desarrollo: Atmel Studio}
+	
+	\subsection{Entorno de programación: Avrdude.exe}
+	
+\section{Requisitos del diseño}
+
+	\subsection{Señal acústica de aviso}
+	
+	\subsection{Otros requisitos ...}
+
+\section{Test de los recursos del robot}
+
+	\subsection{Descripción de los tests}
+	
+	\subsection{Resultados de los tests}
+
+\section{Metodología del diseño}
+
+	\subsection{Señal acústica de aviso}
+	
+		\subsubsection{Dispositivos electrónicos a utilizar}
+		
+		\subsubsection{Configuración de pines}
+		
+		\subsubsection{Periféricos del MCU}
+		
+		\subsubsection{Diseño del software}
+		
+	\subsection{Otras funcionalidades}
+
+\section{Implementación}
+
+	\subsection{Señal acústica de aviso}
+	
+		\subsubsection{Grafo de la FSM}
+		
+		\subsubsection{Librerías}
+		
+		\subsubsection{Verificación del diseño}
+		
+		\subsubsection{Descarga del fichero de configuración en MCU}
+		
+	\subsection{Otras funcionalidades}
+	
+	\subsection{Integración del software}
+	
+\bibliography{T01}
+
+\appendix
+
+\end{document}
